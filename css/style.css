@@ -1,0 +1,72 @@
+:root {
+  --primary-color: rgb(10, 25, 47);
+  --secondary-color: rgb(100, 255, 218);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  font-family: Calibre;
+}
+
+/* Fonts */
+@font-face {
+  src: url("../fonts/Calibre-Regular.ttf");
+  font-family: Calibre;
+}
+
+@font-face {
+  src: url("../fonts/SFMonoRegular.otf");
+  font-family: SFmono;
+}
+
+/* Utility classes */
+.text-prim {
+  color: var(--primary-color) !important;
+}
+
+.text-sec {
+  color: var(--secondary-color) !important;
+}
+
+/* Nav */
+.navbar {
+  font-family: SFmono;
+  margin: 6px 0 0 0 !important;
+}
+
+.navbar-nav {
+  font-size: 13px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-num {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  color: rgb(204, 214, 246);
+  padding: 12px 10px !important;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#nav-link-resume {
+  align-self: center;
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  padding: 10px 16px !important;
+  color: var(--secondary-color);
+  transition: .2s;
+}
+
+#nav-link-resume:hover {
+  text-decoration: none;
+  background-color: rgb(13, 32, 59);
+}
