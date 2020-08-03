@@ -225,6 +225,10 @@ body {
   margin-bottom: 30px;
 }
 
+.project-techs-ul-mobile {
+  display: none;
+}
+
 .project-tech {
   margin-left: 20px;
 }
@@ -342,6 +346,33 @@ body {
   }
   .project-img {
     height: auto;
+  }
+  .featured-project {
+    display: none;
+  }
+  .project-techs-ul {
+    display: none;
+  }
+  .project-techs-ul-mobile {
+    display: flex;
+    margin-top: 25px;
+    list-style: none;
+    color: rgb(136, 146, 176);
+    font-family: SFmono;
+    font-size: 13px;
+    padding-left: 0;
+    /* justify-content: space-between; */
+    margin-bottom: 30px;
+  }
+  .project-tech {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .project-icon {
+    display: none;
+  }
+  .project-title {
+    display: none;
   }
   .project-text {
     padding: 0 !important;
