@@ -45,7 +45,15 @@ body {
 /* Nav */
 .navbar {
   font-family: SFmono;
-  margin: 6px 0 0 0 !important;
+  /* margin: 6px 0 0 0 !important; */
+  /* padding: 20px 16px; */
+  background-color: var(--primary-color);
+}
+
+#nav {
+  transition: top .2s;
+  transition-delay: .1s;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
 }
 
 .navbar-nav {
@@ -138,6 +146,38 @@ body {
   background-color: rgb(13, 32, 59);
 }
 
+#projects {
+  /* margin: 100px 150px 0 150px; */
+  margin: 100px 150px 600px 150px;
+}
+
+#projects-header-num {
+  font-family: SFmono;
+  color: var(--secondary-color);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#projects-header {
+  position: relative;
+  overflow: hidden;
+  font-family: Calibre-Semibold;
+  font-size: 32px;
+  color: rgb(204, 214, 246);
+}
+
+#projects-header::after {
+  content: "";
+  position: absolute;
+  top: 34%;
+  /* width: 32%; */
+  width: 300px;
+  margin-left: 20px;
+  height: 1px;
+  background: rgb(48, 60, 85);
+}
+
+
 @media screen and (max-width: 1114px) {
   #showcase-intro {
     font-size: 14px;
@@ -167,6 +207,12 @@ body {
   #showcase-about {
     /* width: 60%; */
   }
+  #projects {
+    margin: 100px 100px 600px 100px;
+  }
+  #projects-header::after {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -175,6 +221,24 @@ body {
   }
   #showcase-name, #showcase-description {
     font-size: 60px;
+  }
+  #projects {
+    margin: 100px 50px 600px 50px;
+  }
+  #projects-header-num {
+    font-size: 18px;
+  }
+  #projects-header {
+    font-size: 24px;
+  }
+  #projects-header::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #projects-header::after {
+    margin-left: 10px;
   }
 }
 
