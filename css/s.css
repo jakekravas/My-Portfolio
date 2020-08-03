@@ -164,7 +164,6 @@ body {
   font-family: Calibre-Semibold;
   font-size: 32px;
   color: rgb(204, 214, 246);
-  margin-bottom: 40px;
 }
 
 #projects-header::after {
@@ -178,77 +177,6 @@ body {
   background: rgb(48, 60, 85);
 }
 
-.project-img {
-  border-radius: 3px;
-}
-
-.project-text {
-  text-align: right;
-}
-
-.featured-project {
-  font-family: SFmono;
-  font-size: 14px;
-  color: var(--secondary-color);
-  margin-top: 12px;  
-}
-
-.project-title {
-  font-family: Calibre-Semibold;
-  color: rgb(204, 214, 246);
-  font-size: 28px;
-}
-
-.project-title:hover {
-  text-decoration: none;
-}
-
-.project-textbox {
-  margin-top: 20px;
-  background-color: rgb(23, 42, 69);
-  color: rgb(168, 178, 209);
-  font-size: 18px;
-  padding: 25px;
-  margin-left: -70px;
-  border-radius: 3px;
-  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
-}
-
-.project-techs-ul {
-  margin-top: 25px;
-  list-style: none;
-  display: flex;
-  color: rgb(136, 146, 176);
-  font-family: SFmono;
-  font-size: 13px;
-  justify-content: flex-end;
-  margin-bottom: 30px;
-}
-
-.project-tech {
-  margin-left: 20px;
-}
-
-.project-icon {
-  color: rgb(204, 214, 246);;
-  font-size: 20px;
-  padding: 10px;
-  /* transition: .3s; */
-}
-
-.project-icon:hover {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .featured-project {
-    margin-top: 0px;
-  }
-  .project-techs-ul {
-    margin-bottom: 18px;
-  }
-}
 
 @media screen and (max-width: 1114px) {
   #showcase-intro {
@@ -282,14 +210,8 @@ body {
   #projects {
     margin: 100px 100px 600px 100px;
   }
-  #projects-header {
-    margin-bottom: 60px;
-  }
   #projects-header::after {
     width: 200px;
-  }
-  .featured-project {
-    margin-top: -32px;
   }
 }
 
@@ -312,17 +234,6 @@ body {
   #projects-header::after {
     width: 100%;
   }
-  .featured-project {
-    margin-top: 0;
-  }
-  .project-img {
-    object-fit: cover;
-    height: 350px;
-  }
-  .project-techs-ul {
-    justify-content: initial;
-    padding-left: 0;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -339,21 +250,6 @@ body {
   #showcase-name {
     line-height: 1.1;
     margin-bottom: 0px;
-  }
-  .project-img {
-    height: auto;
-  }
-  .project-text {
-    padding: 0 !important;
-  }
-  .project-textbox {
-    margin-top: 12px;
-    font-size: 18px;
-    padding: 18px;
-    text-align: left;
-    margin-left: 0;
-    border-radius: 3px;
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   }
 }
 
