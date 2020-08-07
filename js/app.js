@@ -13,11 +13,12 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // 800 = number of milliseconds it takes to scroll to specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 30
       }, 800, function(){
-
+        
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        // window.location.hash = $(hash).offset().top - 30;
+        // window.location.hash = hash;
       });
     }
   });
@@ -50,12 +51,3 @@ window.onscroll = () => {
     document.getElementById("nav").style.boxShadow = "none";
   }
 }
-
-// let offset = 80;
-
-// $('.navbar li a').click(function(event) {
-//     event.preventDefault();
-//     console.log($($(this).attr('href'))[0]);
-//     $($(this).attr('href'))[0].scrollIntoView();
-//     scrollBy(0, -offset);
-// });
