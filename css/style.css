@@ -56,6 +56,10 @@ body {
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
 }
 
+.active {
+  color: var(--secondary-color) !important;
+}
+
 .navbar-nav {
   font-size: 13px;
 }
@@ -148,7 +152,8 @@ body {
 
 #projects {
   /* margin: 100px 150px 0 150px; */
-  margin: 100px 150px 600px 150px;
+  /* margin: 100px 150px 600px 150px; */
+  margin: 100px 150px;
 }
 
 #projects-header-num {
@@ -290,6 +295,26 @@ body {
 .project-title-section-mobile,
 #img-2-mobile {
   display: none;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact-sub-header {
+  font-family: SFmono;
+  color: var(--secondary-color);
+}
+
+#contact-header {
+  font-family: Calibre-Semibold;
+  font-size: 60px;
+  color: rgb(204, 214, 246);
+}
+
+#contact-text {
+  color: rgb(136, 146, 176);
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1200px) {
