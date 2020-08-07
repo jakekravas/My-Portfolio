@@ -4,7 +4,6 @@ if (prevScrollpos < 5) {
   document.getElementById("nav").style.boxShadow = "none";
 }
 
-console.log(prevScrollpos);
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
 
