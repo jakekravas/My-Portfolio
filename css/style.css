@@ -141,18 +141,16 @@ body {
   border-radius: 3px;
   font-family: SFmono;
   font-size: 14px;
+  text-decoration: none;
   padding: 18px 28px;
   transition: .3s;
 }
 
 #get-in-touch-btn:hover {
-  text-decoration: none;
   background-color: rgb(13, 32, 59);
 }
 
 #projects {
-  /* margin: 100px 150px 0 150px; */
-  /* margin: 100px 150px 600px 150px; */
   margin: 100px 150px;
 }
 
@@ -315,6 +313,22 @@ body {
 #contact-text {
   color: rgb(136, 146, 176);
   font-size: 20px;
+  padding-bottom: 39px;
+}
+
+#email-link {
+  font-family: SFmono;
+  font-size: 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 20px 28px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: .3s;
+}
+
+#email-link:hover {
+  background-color: rgb(13, 32, 59);
 }
 
 @media screen and (max-width: 1200px) {
@@ -356,7 +370,7 @@ body {
     /* width: 60%; */
   }
   #projects {
-    margin: 100px 100px 600px 100px;
+    margin: 100px 100px 70px 100px;
   }
   #projects-header {
     margin-bottom: 60px;
@@ -377,7 +391,7 @@ body {
     font-size: 60px;
   }
   #projects {
-    margin: 100px 50px 600px 50px;
+    margin: 100px 50px;
   }
   #projects-header-num {
     font-size: 18px;
