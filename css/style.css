@@ -185,7 +185,7 @@ body {
   background: rgb(48, 60, 85);
 }
 
-#project-1, #project-2 {
+#project-1, #project-2, #project-3 {
   margin-bottom: 80px;
 }
 
@@ -211,11 +211,28 @@ body {
   font-size: 28px;
   transition: .3s;
   transition-delay: .05s;
+  margin-bottom: 0;
 }
 
 .project-title:hover {
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+.tws-title:hover {
+  color: rgb(204, 214, 246);
+}
+
+.date-text {
+  color: rgb(136, 146, 176);
+  font-size: 14.5px;
+}
+
+.date-text-mobile {
+  display: none;
+  color: rgb(136, 146, 176);
+  font-size: 14.5px;
+  margin-bottom: 8px;
 }
 
 .project-textbox {
@@ -251,7 +268,11 @@ body {
   font-size: 13px;
   justify-content: flex-end;
   /* margin-bottom: 30px; */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  line-height: 1.6;
 }
 
 .project-techs-ul-2 {
@@ -477,6 +498,12 @@ footer {
   .project-techs-ul-2 {
     display: none;
   }
+  .date-text {
+    display: none;
+  }
+  .date-text-mobile {
+    display: initial;
+  }
   .project-techs-ul-mobile {
     display: flex;
     /* line-height: 1.9; */
@@ -529,6 +556,7 @@ footer {
     font-size: 28px;
     transition: .3s;
     transition-delay: .05s;
+    margin-bottom: 0;
   }
   .project-title-mobile:hover {
     text-decoration: none;
